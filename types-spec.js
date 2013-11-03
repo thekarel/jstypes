@@ -43,6 +43,18 @@ describe('The following types can be tested in JavaScript', function() {
     expect(types.isFloat(types.type.FUNCTION)).toBe(false);
   });
 
+  it('number', function() {
+    expect(types.isNumber(types.type.STRING)).toBe(false);
+    expect(types.isNumber(types.type.INT)).toBe(true);
+    expect(types.isNumber(types.type.FLOAT)).toBe(true);
+    expect(types.isNumber(types.type.BOOLEAN)).toBe(false);
+    expect(types.isNumber(types.type.UNDEFINED)).toBe(false);
+    expect(types.isNumber(types.type.NAN)).toBe(false);
+    expect(types.isNumber(types.type.ARRAY)).toBe(false);
+    expect(types.isNumber(types.type.OBJECT)).toBe(false);
+    expect(types.isNumber(types.type.FUNCTION)).toBe(false);
+  });
+
   it('boolean', function() {
     expect(types.isBoolean(types.type.STRING)).toBe(false);
     expect(types.isBoolean(types.type.INT)).toBe(false);

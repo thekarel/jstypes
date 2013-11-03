@@ -5,6 +5,7 @@ Types checked:
 * string
 * integer
 * float
+* number
 * boolean
 * null
 * undefined

@@ -30,6 +30,10 @@ exports.isFloat = function(v) {
   return ((v % 1) > 0)
 }
 
+exports.isNumber = function(v) {
+  return (typeof v === 'number' && !isNaN(v))
+}
+
 exports.isBoolean = function(v) {
   return (typeof v === 'boolean')
 }
