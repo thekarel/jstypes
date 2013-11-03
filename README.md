@@ -12,3 +12,8 @@ Types checked:
 * array
 * object
 * function
+
+To run the tests:
+
+* sudo npm install -g jasmine-node
+* jasmine-node .
