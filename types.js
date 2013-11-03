@@ -1,4 +1,4 @@
-/**
+*
  * Terse JavasScript type checking functions
  * Charles Szilagyi
  * 2013.10.03. https://github.com/thekarel
@@ -51,7 +51,7 @@ exports.isNan = function(v) {
 }
 
 exports.isArray = function(v) {
-  return (v !== null && typeof v === 'object' && typeof v.length === 'number')
+  return (v instanceof Array)
 }
 
 exports.isObject = function(v) {
@@ -78,4 +78,3 @@ Type of FUNCTION is function
 
 Resources:
 https://github.com/lodash/lodash/blob/master/lodash.js
- */
