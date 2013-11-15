@@ -1,4 +1,4 @@
-*
+/**
  * Terse JavasScript type checking functions
  * Charles Szilagyi
  * 2013.10.03. https://github.com/thekarel
@@ -78,3 +78,4 @@ Type of FUNCTION is function
 
 Resources:
 https://github.com/lodash/lodash/blob/master/lodash.js
+*/
